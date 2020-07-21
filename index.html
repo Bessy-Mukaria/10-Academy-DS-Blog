@@ -1,29 +1,101 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Bessy Mukaria</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:bessymukaria@@gmail.com">email</a></li>
-        		<li><a href="https://github.com/Bessy-Mukaria">github.com/Bessy-Mukaria</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bessy Mukaria</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<header>
+		<h1>Defining user segmentation in social media through the use Twitter mining</h1>
+	</header>
+	<section class="container">
+		<div class="blurb">
+			<p>An informed insight of how an individual has influence on others in a circle can help a business create
+				 social media campaigns that aid in marketing and advertising. An approach to determine this is summarized here 
+				 with explanations of how to use tweepy API in python to exctract data and how to use the data obtained
+				  to rank the users. Users are ranked based on their influence.
+			</p>
+			<p>This blog is among the challenges undertaken at <a class="10Acad" href="https://www.10academy.org/">10 Academy</a> 
+				training in July 2020.
+			</p>
+		</div>
+		<div class="blurb">
+			<h2>Problem statement</h2>
+			<p>
+				What determines the level of influence a user has on social media?
+				A study is made to make an understanding of the effects of the social media influencers are in Africa 
+				to inform a Social media campaign based on the following factors;  
+				<ul>
+					<li>Popularity (Retweet Influence): measured by the number of Retweets and Likes users get.</
+					<li>Reach (Indegree Influence): measured by the size of their audience.</li>
+					<li>Relevance (Mentions Influence): measured by the relevancy of their content.</li>
+				</ul>
+			</p>
+			<h2>Methodology</h2>
+			<h3>Data Collection and processing</h3>
+			<p>
+				In exctraction of the data, I scrapped
+				<a href="https://africafreak.com/100-most-influential-twitter-users-in-africa">Africa Influential Tweeter
+					Users</a> and
+				<a
+					href="https://www.atlanticcouncil.org/blogs/africasource/african-leaders-respond-to-coronavirus-ontwitter/#east-africa">Africa
+					leaders response to Corona virus</a> websites  to obtain the twitter accounts of the most influential twitter users
+					 and top African leaders respectively.
+					
+				<h3>Data Processing</h3>
+				<p>
+					In ensuring data quality control, empty entries  were droppped to ensure completeness of the data
+					and correct inference of the results during analysis
+				</p>
+				<h3>Data Analysis</h3>
+				I did visualization on the clean to data to help get insight of the trend in the data. 
+				The main focus was on the three ranking scores of measuring
+				influence; popular score, Relevance score and Reach score.
+				
+				<h4>Popularity score for Africa goverment officials and Africa twitter influencers</h4>
+				<img src="./Govt_poularity score.png" alt="Popularity score of government officials" width="300" height="300">
+				<img src="./Influencer_popularity score.png" alt="Popularity score of  influencers" width="300" height="300">
+
+				<h4>Reach score for Africa goverment officials and Africa twitter influencers</h4>
+				<img src="./Govt_Reach score.png" alt="Reach score of government officials" width="300" height="300">
+				<img src="./Influencer_Reach score.png" alt="Reach score of influencers" width="300" height="300">
+
+				<h4>Relevance score for Africa goverment officials and Africa twitter influencers</h4>
+				<img src="./Govt_Relevance score.png" alt="Relevance score of government officials" width="300" height="300">
+				<img src="./Influencer_Relevance Score.png" alt="Relevance score of influencers" width="300" height="300">
+
+				<h4>Findings</h4>
+				<p>
+					From the analysis, using the above scores, it was shown that the most influential users addressed matters Corona Virus which is under health and well-being, Human rights and politics.
+				</p>
+				<img src="./Overall hashtags.png" alt="Most used hashtags by users" width="300" height="300">
+			</p>
+
+			<h3>Conclusion and Recommendation</h3>
+			<p>
+				Retweet influence, mentions influence and indegree influence have big a role to play in determining the
+			level of influence a user has on the society and its environment. And this is a strength that can be
+			tapped into and utilized by businesses to push products and services through campaigns by partnering
+			with the most influential users through marketing and advertising. This is dependent on the category of
+			the content of the user.
+			I would recommend other factors that determine a user’s influence to be factored in determining if one
+			is more influential other than the use of the three ranks of measuring influence. For instance, the
+			interpersonal relationship of a user with the virtual community can be considered. 
+			</p>
+		</div>
+	</section>
+	<footer>
+		<small>
+			<p><strong>CONTACTS</strong></p>
+			<p>Email: bessymukaria@gmail.com</a></p>
+			<p>Github link: <a href="https://github.com/Bessy-Mukaria/">github.com/Bessy-Mukaria</a></p>
+			<p>Linkedin: <a href="https://www.linkedin.com/in/bessy-mukaria-021484127/">Bessy Mukaria</a></p>
+		</small>
+	</footer>
+</body>
+
 </html>
